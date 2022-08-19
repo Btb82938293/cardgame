@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+html {
+    font-size: 1em;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background-image: url("table.jpeg");
+    background-size: cover;
+    width: 30em;
+    height: 30em;
+    position: relative;
+}
+
+#deckInfo {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: .5em;
+}
+
+#remainCards {
+    margin-left: .5em;
+    color: white;
+}
+
+#newDeck {
+    background: yellow;
+    padding: .3em .8em;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#newDeck:hover {
+    background: rgb(220, 220, 9);
+}
+
+#field {
+    width: 100%;
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+h3, p {
+    color: white;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#firstCard,
+#secondCard {
+    border: 2px solid black;
+    width: 20%;
+    height: 30%;
+    border-radius: 15px;
+    margin: .5em;
+}
+.btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    padding: .3em .8em;
+    background-color: yellow;
+    font-weight: 600;
+    font-size: 1.2em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#reset {
+    display: none
+}
+
+#reset:hover {
+    background: rgb(220, 220, 9);
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+}
+
+#draw:hover {
+    background: rgb(220, 220, 9);
+}
+
+.score {
+    position: absolute;
+    top: 14em;
+    left: .5em;
+}
+#myScoreboard {
+    margin-bottom: .5em;
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 1.5em;
+    }
+    .container {
+        width: 50em;
+        height: 50em;
+    }
+    #field {
+        width: 100%;
+        height: 97%;
+    }
+    #firstCard,
+    #secondCard {
+        margin: 2em;
+        }
+}
